@@ -73,6 +73,7 @@ class AppState extends State<App> {
             onTap: ((index) {
               setState(() {
                  _currentPage = index;
+            
               });
             }),
 
@@ -113,7 +114,8 @@ class AppState extends State<App> {
                 ),
                 icon: Icon(Icons.insert_comment),
               )
-            ]));
+            ]),
+            body: currentPage(),);
   }
   //
 }
